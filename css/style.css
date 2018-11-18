@@ -1,0 +1,192 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Cormorant Upright", serif;
+  font-weight: lighter;
+  position: relative;
+}
+
+p {
+  margin: 0%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.top,
+.about_section,
+.review_section {
+  height: 100%;
+}
+
+.centralize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* top page */
+.top {
+  color: white;
+  background-color: #f07818;
+  position: relative;
+}
+
+.top_p {
+  margin: 0%;
+}
+
+.top_h1 {
+  margin: 0%;
+}
+
+/* about page */
+.about_section {
+  display: flex;
+}
+
+.about_left,
+.about_right {
+  width: 50%;
+  position: relative;
+}
+
+.about_left {
+  background-color: rgb(157, 207, 191);
+}
+
+.about_h1 {
+  font-size: 2.2em;
+  color: #042608;
+}
+
+.about_ul {
+  color: #faedd9;
+}
+
+.about_us_li {
+  letter-spacing: 13px;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  position: absolute;
+  bottom: 10%;
+}
+
+.about_us_p {
+  margin-left: 10%;
+}
+
+.about_right {
+  position: relative;
+  background-color: #fcebb6;
+}
+
+.about_images {
+  display: flex;
+}
+
+.about_img {
+  width: 100%;
+}
+
+/* menu page */
+.menu_section_back_pic,
+.review_section_back_pic {
+  height: 450px;
+  background-size: 100%;
+}
+.menu_section_back_pic {
+  background-image: url("../img/menu_backg.jpg");
+}
+.menu_section {
+  height: 1300px;
+  background-color: #f0a830;
+}
+
+.position_relative {
+  height: 100%;
+  position: relative;
+}
+
+.menu_list_bar {
+  width: 100%;
+  padding-left: 5%;
+  position: absolute;
+  top: 27%;
+  background-color: #faedd9;
+}
+
+.menu_list_ul {
+  margin: 0;
+  display: flex;
+  font-size: 2.5em;
+}
+
+.menu_list_li {
+  margin-right: 3%;
+}
+
+.menu_indent {
+  z-index: 5;
+  position: absolute;
+  left: 5%;
+}
+
+.menu_pic1,
+.menu_pic2 {
+  position: absolute;
+}
+
+.menu_pic1 {
+  left: 26%;
+  top: -171px;
+  width: 450px;
+  height: 300px;
+  z-index: 2;
+  box-shadow: -15px 15px #2a5c0b;
+}
+
+.menu_pic2 {
+  width: 750px;
+  right: 0;
+  height: 550px;
+  top: -350px;
+  box-shadow: -15px 15px #808f12;
+}
+
+.menu_section_title {
+  font-size: 7em;
+  color: #faedd9;
+  margin: 0%;
+  margin-bottom: 0.7em;
+  margin-top: 0.5em;
+  letter-spacing: 0.2em;
+}
+
+.menu_section_p {
+  width: 40%;
+}
+
+/* review page */
+.review_section_back_pic {
+  background-image: url("../img/review_backg.jpg");
+}
+.review_section {
+  background-color: #fcebb6;
+}
+
+.review_section_h1 {
+  margin: 0%;
+}
+
+/* contact page */
+.contact_section {
+  height: 85%;
+  background-color: #5e412f;
+}
