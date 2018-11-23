@@ -32,11 +32,8 @@ ul {
 }
 
 /* top page */
-.left_top,
-.left_bottom,
-.right_top,
-.right_bottom {
-  position: absolute;
+.flowers {
+  position: fixed;
   width: 37%;
   height: 50%;
   z-index: 50;
@@ -48,22 +45,23 @@ ul {
 }
 
 .left_bottom {
-  bottom: 0;
+  bottom: 0%;
   left: 0;
 }
 
 .right_top {
   top: 0;
-  left: 50%;
+  right: 0;
 }
 
 .right_bottom {
-  bottom: 0;
-  left: 50%;
+  bottom: 0%;
+  right: 0;
 }
 
 .images,
 .img {
+  width: 100%;
   height: 100%;
 }
 
@@ -151,7 +149,7 @@ ul {
 }
 
 .menu_list_bar {
-  z-index: 5;
+  z-index: 60;
   margin-left: -10%;
   width: 100%;
   padding-left: 5%;
