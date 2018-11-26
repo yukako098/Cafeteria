@@ -1,37 +1,34 @@
 addEventListener("scroll", getInfo);
 
 function getInfo() {
-  var leftTopStyle = document.getElementById("flower_lefttop").style;
-  var rightTopStyle = document.getElementById("flower_righttop").style;
-  var leftBottomStyle = document.getElementById("flower_leftbottom").style;
-  var rightBottomStyle = document.getElementById("flower_rightbottom").style;
+  var leftTop = document.getElementById("flower_lefttop");
+  var rightTop = document.getElementById("flower_righttop");
+  var leftBottom = document.getElementById("flower_leftbottom");
+  var rightBottom = document.getElementById("flower_rightbottom");
 
   if (pageYOffset >= 200) {
-    leftTopStyle.transition = "1s";
-    leftTopStyle.transform = "translate(-150px, -150px)";
+    leftTop.style.transition = "1s";
+    leftTop.style.transform = "translate(-150px, -150px)";
 
-    rightTopStyle.transition = "1s";
-    rightTopStyle.transform = "translate(150px, -150px)";
+    rightTop.style.transition = "1s";
+    rightTop.style.transform = "translate(150px, -150px)";
 
-    leftBottomStyle.transition = "1s";
-    leftBottomStyle.transform = "translate(-150px, 150px)";
+    leftBottom.style.transition = "1s";
+    leftBottom.style.transform = "translate(-150px, 150px)";
 
-    rightBottomStyle.transition = "1s";
-    rightBottomStyle.transform = "translate(150px, 150px)";
+    rightBottom.style.transition = "1s";
+    rightBottom.style.transform = "translate(150px, 150px)";
   } else if (pageXOffset < 200) {
-    leftTopStyle.transition = "1s";
-    leftTopStyle.transform = "";
+    leftTop.style.transition = "1s";
+    leftTop.style.transform = "";
 
-    rightTopStyle.transition = "1s";
-    rightTopStyle.transform = "";
+    rightTop.style.transition = "1s";
+    rightTop.style.transform = "";
 
-    leftBottomStyle.transition = "1s";
-    leftBottomStyle.transform = "";
+    leftBottom.style.transition = "1s";
+    leftBottom.style.transform = "";
 
-    rightBottomStyle.transition = "1s";
-    rightBottomStyle.transform = "";
+    rightBottom.style.transition = "1s";
+    rightBottom.style.transform = "";
   }
-  //console.log(pageYOffset);
 }
-
-// transform: translate(50px, 50px);

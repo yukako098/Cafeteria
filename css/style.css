@@ -31,6 +31,15 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+.parallax {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
 /* top page */
 .flowers {
   position: fixed;
@@ -130,12 +139,12 @@ ul {
 }
 
 /* menu page */
-.menu_section_back_pic,
+#menu_section_back_pic,
 .review_section_back_pic {
   height: 450px;
   background-size: 100%;
 }
-.menu_section_back_pic {
+#menu_section_back_pic {
   background-image: url("../img/menu_backg.jpg");
 }
 .menu_section {

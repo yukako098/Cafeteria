@@ -1,0 +1,47 @@
+@mixin widthMax {
+  width: 100%;
+}
+
+// SEARCH PAGE
+@mixin formPosition {
+  position: absolute;
+  top: 30%;
+}
+
+// MAIN PAGE
+@mixin viewBtn {
+  font-size: $fontMidium;
+  color: $lighterGray;
+}
+
+@mixin imgPosition {
+  width: 25%;
+  position: absolute;
+}
+
+// MEDIA QUERY
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
