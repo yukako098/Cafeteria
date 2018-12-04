@@ -1,12 +1,12 @@
-@import "variable";
-@import "mixins";
+@import "variable", "mixins";
+@import "normalize", "contactFooter", "postPage", "topFlowers",
+  "reservationPage";
 
 html {
   height: 100%;
 }
 
 // SEARCH PAGE
-
 #search-page {
   background-color: $cream;
   display: none;
@@ -203,13 +203,8 @@ html {
 }
 
 // MAIN
-
 .main {
   background-color: $lighterCream;
-
-  // @include for-phone-only {
-  //   height: 2100px;
-  // }
 }
 
 .main-nav {
@@ -334,26 +329,4 @@ html {
 .blog_contact {
   height: 650px;
   background-color: $brown;
-
-  // @include phone-and-tablet-portrait {
-  //   display: block;
-  //   position: relative;
-  // }
-
-  .contact_left {
-    // @include phone-and-tablet-portrait {
-    //   position: absolute;
-    //   top: 10%;
-    //   height: 50%;
-    //   width: 100%;
-    // }
-  }
-
-  .contact_right {
-    // @include phone-and-tablet-portrait {
-    //   position: absolute;
-    //   bottom: 0;
-    //   width: 100%;
-    // }
-  }
 }

@@ -1,6 +1,25 @@
-@import "top";
-@import "variable";
-@import "mixins";
+body {
+  @include heightMax;
+}
+
+body {
+  font-family: $cormorant;
+  font-weight: lighter;
+  position: relative;
+}
+
+p {
+  margin: 0%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.centralize {
+  @include centralize;
+}
 
 .reservation {
   height: 100%;
